@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Postit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/Estilos.css" />
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/Clases.js"></script>
+  <script type="text/javascript" src="js/Codigo.js"></script>
+</head>
+<body>
+  <div id="contenedor">
+    <div id="cabezal" class="clearfix">
+      <u id="navPrincipal2">
+        <a id="btnLogo"><img id="logo" src="http://postit.develotion.com/logo.png" alt="logo" /></a>
+      </u>
+      <ul id="navPrincipal">
+        <li id="btnPublicar" >
+          <a >Publicar</a>
+        </li>
+        <li id="btnContactos">
+          <a>Contactos</a>
+        </li>
+        <li id="btnRegistrarse">
+          <a >Registrarse</a>
+        </li>
+        <li id="btnLogin">
+          <a >Login</a>
+        </li>
+        <li id="btnHome">
+          <a >Home</a>
+        </li>
+        <li id="btnCerrarSesion">
+          <a >Cerrar Sesion</a>
+        </li>
+        <li id="btnDenunciados">
+          <a>Denunciados</a>
+        </li>
+       <!--<li id="btnDenunciarlo">
+          <a>Denunciame</a>
+       </li>-->
+    </div>
+    <div id="contenido">
+      <p id="user-header"></p>
+      <div id="muro"></div>
+      <div class="pantalla" id="divRegistroUsuario">
+        <center>
+          <h3>Complete el formulario para registrarse</h3>
+        </center>
+        <input type="text" id="nombreRegistro" placeholder="Nombre" />
+        <input type="text" id="apellidoRegistro" placeholder="Apellido" />
+        <input type="text" id="paisRegistro" placeholder="País" />
+        <input type="text" id="ciudadRegistro" placeholder="Ciudad" />
+        <input type="text" id="correoRegistro" placeholder="Correo Electrónico" />
+        <input type="password" id="contraseñaRegistro" placeholder="Contraseña" />
+        <input type="password" id="reContraseñaRegistro" placeholder="Re-ingrese Contraseña" />
+        <input type="file" id="imagenRegistro" />
+        <p id="registroMensaje"></p>
+        <input type="button" value="Registrar" id="btnRegistrar" />
+        <input type="button" value="Volver atras" id="btnVolverAtras" />
+      </div>
+      <div>
+        <div class="pantalla" id="divFormularioLogin">
+          <center>
+            <h3>Complete el formulario para ingresar</h3>
+          </center>
+          <input type="text" id="ingresarUsuario" placeholder="Correo Electrónico" />
+          <input type="password" id="ingresarContraseña" placeholder="Contraseña" /><br /><br />
+          <input type="button" value="Ingresar" id="btnIngresar" />
+          <p id="loginMensaje"></p>
+        </div>
+      
+      <div class="pantalla" id="divAltaPublicacion">
+        <center>
+          <h3>Dar publicación de alta</h3>
+        </center>
+        <input type="text" id="txtTitulo" placeholder="Titulo" /><br />
+        <textarea name="" id="txtTexto" cols="30" rows="10" maxlength="120" placeholder="Escriba aquí"></textarea><br />
+        <input type="file" id="txtImagen" />
+        <select name="slcPublica" id="slcPublica">
+          <option value="true">Publica</option>
+          <option value="false">Privada</option>
+        </select><br /><br />
+        <input type="button" value="Publicar" id="btnPublicacion" />
+        <p id="mensajePublicacion"></p>
+      </div>
+      <div class="pantalla" id="divFrmContactos">
+        <div class="pantalla" id="contactosTotales">          
+          <center>
+            <h3>Usuarios</h3>
+          </center>
+        </div>
+        <div class="pantalla" id="contactosSolicitud"> 
+            <center>
+                <h3>Solicitudes</h3>
+              </center>         
+        </div>
+        <div class="pantalla" id="contactosAgregados">   
+            <center>
+                <h3>Contactos</h3>
+              </center>       
+        </div>
+      </div>
+        <div class="pantalla" id="divFrmDenunciados"> 
+          <center>
+              <h3>Denunciados</h3>
+            </center>         
+      </div>            
+      
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
